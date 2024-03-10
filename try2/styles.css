@@ -1,0 +1,91 @@
+/* Modern Kanban Board */
+
+/* Overall Kanban Container */
+body{
+    background: #73bc63; 
+}
+.kanban {
+    display: flex;
+    padding: 20px;
+    width: 100vw;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styling */
+.kanban * {
+    font-family: 'Montserrat', sans-serif; /* Elegant and modern font */
+}
+
+/* Individual Kanban Columns */
+.kanban__column {
+    flex: 1;
+    background: #F2F2F2; /* Light Gray */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 10px;
+}
+
+/* Adjust First and Last Column Margins */
+.kanban__column:first-child {
+    margin-left: 0;
+}
+
+.kanban__column:last-child {
+    margin-right: 0;
+}
+
+/* Column Title Styling */
+.kanban__column-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333; /* Dark Gray */
+    user-select: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Styling for Kanban Input Fields */
+.kanban__item-input {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC; /* Light Gray Border */
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #141414; /* Dark Gray */
+}
+
+/* Dropzone Styling */
+.kanban__dropzone {
+    height: 10px;
+    background: #D6D6D6; /* Light Gray */
+    border-radius: 3px;
+    transition: background 0.15s, height 0.15s;
+}
+
+/* Active Dropzone Styling */
+.kanban__dropzone--active {
+    height: 20px;
+    background: #2a2929; /* Gray */
+}
+
+/* Styling for 'Add Item' Button */
+.kanban__add-item {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #24a703; /* Dark Gray */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.kanban__add-item:hover {
+    background: #09ed20; 
+}
